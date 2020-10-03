@@ -1,7 +1,72 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html { 
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: inherit; 
+}
 
+.obsah {
+    padding: 0.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin-left: 0px;
+}
+li {
+    text-align: center;
+    display: inline-block;
+    width: 49%;
+    padding: 0.5em;
+}
+li:first-child {
+    width: 100%;
+}
+p {
+    font-family: 'source_sans_pro', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+.jmeno {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+.profil{
+    background-color: #31363b;
+    color: whitesmoke;
+    max-width: 250px;
+}
+.foto {
+    width: 250px;
+    height: auto;
+}
+.logo {
+    background-color: #b92e81;
+    position: absolute;
+    left: 180px;
+    top: 150px;
+    border-radius: 100%;
+    
+}
+.portfolio:hover {
+    background-color: #e74c3c;
+}
+.facebook:hover {
+    background-color:#3b5998;
+
+}
+.twitter:hover {
+    background-color: #1da1f2;
+}
 /*
  BARVY
  czechitas  #b92e81
@@ -15,5 +80,6 @@ html { box-sizing: border-box; }
 
 
 body {
+    margin: 0;
     background-color: #bdc3c7;
 }
